@@ -8,6 +8,7 @@
 using namespace std;
 using namespace std::filesystem;
 int main(int argc, char *argv[]){
+    system("mkdir ../output > /dev/null 2>&1");
     FILE *abn=fopen("../output/abnormal.csv","w");
     FILE *equ=fopen("../output/equal.csv","w");
     FILE *ine=fopen("../output/inequal.csv","w");
