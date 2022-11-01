@@ -4,6 +4,7 @@
 #include <vector>
 #include "prog.hh"
 #include "equal.hh"
+#include "machine.hh"
 using namespace std;
 using namespace std::filesystem;
 int main(int argc, char *argv[]){
