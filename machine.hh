@@ -1,10 +1,11 @@
 #ifndef MACHINE_HH
 #define MACHINE_HH
-class Machine{
+#include "equal.hh"
+class Machine:public Equality{
     private:
     bool _needmachine{true};
     public:
-    Machine(bool needmachine):_needmachine(needmachine){}
+    Machine(Program prog1,Program prog2,bool needmachine):Equality(prog1,prog2),_needmachine(needmachine){}
     void down(){
         _needmachine=false;
     }
