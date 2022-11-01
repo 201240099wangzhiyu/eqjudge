@@ -54,7 +54,7 @@ int main(int argc, char *argv[]){
             for(int j=0;j<file.size();j++){
                 file[j].run(indata);
             }
-            for(int j=0;j<pairs.size();j++){
+            for(int j=base;j<pairs.size();j++){
                 pairs[j].judge();
             }
         }
